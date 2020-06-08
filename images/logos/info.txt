@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: expressway_rg
+font link: https://www.fontspring.com/fonts/typodermic/expressway/expressway-regular
+font author: Typodermic Fonts
+font author site: http://typodermicfonts.com/
+Slogan Font: OFLGoudyStMTT.ttf
+
+icon designer: Chris Barklem
+icon designer link: /barklem
+        
+
+fontColor: {"hex":"#FFFFFF"}
+bgColor: {"hex":"transparent"}
+iconColor: {"hex":"#FFFFFF"}
+sloganColor: {"hex":"#FFFFFF"}
+      
