@@ -1,0 +1,68 @@
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --font-default: 'Montserrat', sans-serif;
+    --big-font: 60px;
+    --descr-font: 18px;
+    --action-font: 32px;
+    --small-font: 12px;
+    --medium-font: 48px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: var(--black);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo > img{
+    height: 100%;
+}
+
+.nav-options{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    font-family: var(--font-default);
+    font-size: var(--descr-font);
+    text-transform: uppercase;
+}
+
+.nav-option > a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.banner{
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+}
+
+.ban-logo{
+    width: 50vw;
+    position: absolute;
+    top: 20%;
+}
+
+.ban-logo > img{
+    width: 100%;
+    height: auto;
+}
