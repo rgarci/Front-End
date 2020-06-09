@@ -277,11 +277,13 @@
     bottom: 30%;
 }
 
-.contestan .cont-name{
+.contestan .cont-name a{
     font-family: var(--font-default);
     font-size: var(--medium-font);
     font-weight: bold;
     text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
 }
 
 .contestan .percentage{
