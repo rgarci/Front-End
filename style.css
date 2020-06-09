@@ -2,9 +2,8 @@
     --black: #000000;
     --white: #FFFFFF;
     --font-default: 'Montserrat', sans-serif;
-    --big-font: 60px;
+    --big-font: 62px;
     --descr-font: 24px;
-    --nav-font: 18px;
     --action-font: 32px;
     --small-font: 12px;
     --medium-font: 48px;
@@ -39,18 +38,18 @@
     list-style: none;
     justify-content: space-evenly;
     font-family: var(--font-default);
-    font-size: var(--nav-font);
+    font-size: var(--descr-font);
     text-transform: uppercase;
 }
 
 .nav-option > a{
-    padding-right: 20px;
+    padding-right: 24px;
     text-decoration: none;
     color: var(--white);
 }
 
 .banner{
-    background-image: url("images/banner.jpg");
+    background: url("images/banner.jpg") center center no-repeat;
     background-size: cover;
     height: 91vh;
     display: flex;
@@ -71,7 +70,7 @@
 .aboutus{
     height: calc(100vh -100px);
     font-family: var(--font-default);
-    padding: 50px;
+    padding: 54px;
 }
 
 .au-title{
@@ -82,14 +81,14 @@
 
 .au-content{
     width: 60vw;
-    padding-top: 20px;
+    padding-top: 18px;
     font-size: var(--descr-font);
     line-height: 2em;
 }
 
 .au-subtitle{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-align: center;
     font-size: var(--medium-font);
     font-weight: bold;
@@ -112,7 +111,7 @@
 .cm-image{
     width: 200px;
     height: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .cm-image > img{
@@ -134,7 +133,7 @@
     padding-bottom: 4rem;
 }
 
-.quizz-title{
+.quizz-title, .art-title{
     font-family: var(--font-default);
     font-size: var(--big-font);
     font-weight: bold;
@@ -155,7 +154,7 @@
     font-size: var(--action-font);
     font-weight: bold;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
@@ -169,4 +168,32 @@
     text-transform: capitalize;
     padding: 5px;
     border-bottom: 3px solid var(--white);
+}
+
+.articles{
+    height: 100vh;
+    background: linear-gradient(269.98deg, #161827 5.05%, rgba(26, 41, 151, 0) 99.18%), url("images/jodie2.png") 15% 0% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    align-items: flex-end;
+}
+
+.art-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 4rem;
+}
+
+.article-desc{
+    color: var(--white);
+    font-family: var(--font-default);
+    font-size: var(--descr-font);
+    font-weight: 500;
+    width: 500px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
