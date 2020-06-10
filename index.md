@@ -18,10 +18,13 @@
             <li class="nav-option"><a href="#">contacto</a></li>
             <li class="nav-option"><a href="#">subscribe</a></li>
         </ul>
+        <figure class="burger">
+            <a href=""><img src="images\burger.png" alt="burger-menu"></a>
+        </figure>
     </nav>
     <section class="banner">
         <figure class="ban-logo">
-            <img src="images\logos\default.png" alt="TORCHWOOD">
+            <img  alt="TORCHWOOD">
         </figure>
     </section>
     <section class="aboutus" id="aboutus">
@@ -55,6 +58,7 @@
             <a href="" class="gotoservice">contestar quizz</a>
             <a href="" class="gotoservices">ver todos los quizzes</a>
         </div>
+        
     </section>
     <section class="articles">
         <div class="art-info">
@@ -100,14 +104,18 @@
                     <div class="cont-bar opt1"></div>
                     <p class="cont-percent">64%</p>
                 </div>
+                
             </div>
+
             <div class="contestan">
                 <article class="cont-name" title="VOTA AHORA"><a href="">cybermen</a></article>
                 <div class="percentage">
                     <div class="cont-bar opt2"></div>
                     <p class="cont-percent">36%</p>
                 </div>
+
             </div>
+            
         </section>
         <p class="time-left">Quedan 36 hrs 24 min 18 s</p>
     </section>
