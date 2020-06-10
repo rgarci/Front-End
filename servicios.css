@@ -4,6 +4,11 @@
     --orange: #ff9b04;
     --grey-light:#E9EFE7;
     --font-primary: 'Montserrat', sans-serif;
+    --small-font: 12px;
+    --action-font: 20px;
+    --descr-font: 24px;
+    --medium-font: 48px;
+    --big-font: 62px;
 }
 
 *,
@@ -15,43 +20,81 @@
 body {
     font-family: var(--font-primary);
     font-weight: 300;
-    font-size: 12px;
+    font-size: var(--small-font);
 }
 
 
-
-.navbar{
-    background-color: black;
-    color: aliceblue;
+header{
+  position: relative;
 }
 
-.quizzez{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: var(--grey-light);
+.nav-bar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  padding: 3px 1rem;
 }
 
-.logo{
-    width: 10rem;
-    height: auto;
+.logo {
+  width: 6rem;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-bar .nav-options li{
+  display: inline-block;
+  margin: 1rem;
 }
 
 .hero-banner{
-    position: relative;
-    height: 20rem;
-    background-size: cover;
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px var(--black);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+  background: url("images/back-serv.jpg");
+  background-position-y: -6rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px var(--black);
 }
-
 
 .hero-banner h1{
   color: white;
+  font-weight: bold;
+  font-size: var(--medium-font);
 }
-.quizz-card {
+
+.sect-quiz, .shop{
+  background-color: var(--grey-light);
+  padding: 2rem;
+}
+
+.sect-quiz h2, .sect-art h2, .shop h2{
+  text-align: center;
+  font-weight: 300;
+  font-size: var(--descr-font);
+  margin: auto auto 2rem auto;
+}
+
+.quizzes, .products, .arts{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+  .quizz-card {
     max-width: 300px;
     min-height: max-content;
     background-color: white;
@@ -82,14 +125,39 @@ body {
     margin-bottom: .5rem;
 
   }
+
+  .btn{
+    text-decoration: none;
+    color: #3262E0;
+    display: block;
+    text-align: end;
+    font-size: var(--action-font);
+    font-weight: bold;
+    margin: 2rem 10rem;
+  }
   
-  .art{
+  .sect-art{
+    padding: 2rem;
+  }
+
+  .arts{
+    max-width: 1200px;
+    padding: 2rem;
+    flex-direction: column;
     margin: auto;
-    align-items: center;
+  }
+
+  .art-card{
+      max-width: 75%;
+      min-height: max-content;
+      display: flex;
+      background-color: white;
+      overflow: hidden;
   }
 
   .art-card .art-card-figure {
-    height: 300px;
+    width: 50%;
+    height: 16rem;
   }
 
   .art-card .art-card-figure img {
@@ -97,13 +165,56 @@ body {
     height: 100%;
     object-fit: cover;
   }
-  
 
-  .art-card{
-    max-width: 100%;
-    min-height: max-content;
-    display: flex;
+  .art-card-content{
+    width: 50%;
     margin: 2rem;
+  }
+
+  .art-card-content h1{
+    font-weight: bold;
+    font-size: var(--descr-font);
+  }
+
+  
+  .product-card{
+      max-width: 200px;
+      min-height: max-content;
+      background-color: white;
+      border: 1px solid seashell;
+      margin: 1rem 1.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+  }
+
+  .product-card .product-card-figure{
+    width: 100%;
+    height: 150px;
+  }
+  
+  .product-card .product-card-figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-card .product-card-content {
+    padding: 1rem ;
+  }
+
+  .product-card .product-card-content p{
+    margin: 8px auto;
+  }
+
+  .product-card .product-card-content strong{
+    text-transform: uppercase;
+  }
+
+  .product-card .product-card-content span {
+    display: block;
+    font-weight: bold;
+    color: #3262E0;
+    text-align: end;
   }
 
   
