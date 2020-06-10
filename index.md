@@ -60,6 +60,7 @@
         </div>
         
     </section>
+    <br>
     <section class="articles">
         <div class="art-info">
             <p class="art-title">todo acerca de jodie whittaker</p>

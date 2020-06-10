@@ -463,14 +463,17 @@
         background: linear-gradient(180deg, #161827 0%, rgba(255, 255, 255, 0) 100%), url("images/jodie2.png") 0% 0% no-repeat;
         align-items: center;
         background-blend-mode: multiply, normal;
+        background-size: cover;
     }
 
     .art-title{
         width: 80%;
+        padding-top: 20px;
     }
     
     .art-info{
         padding-right: 0px;
+        padding-top: 20px;
     }
     
     .article-desc{
@@ -491,7 +494,7 @@
     
     .new{
         width: 70vw;
-        margin-top: 0px;
+        margin-top: 20px;
     }
     
     .new-img{
