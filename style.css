@@ -496,5 +496,40 @@
     .new-img{
         height: 48vw;
     }
+
+    .election{
+        height: calc(100vh - 4rem);
+        align-items: flex-start;
+        padding: 5%;
+        background: radial-gradient(45.51% 45.51% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 86.98%), url("images/cybus.jpg") 30% 0% no-repeat;
+        background-size: cover;
+    }
+    
+    .el-title{
+        text-align: start;
+        top: 5%;
+    }
+    
+    .el-desc{
+        font-size: var(--descr-font);
+        width: 85%;
+        text-align: start;
+        position: absolute;
+        top: 20%;
+    }
+    
+    .contestans{
+        bottom: 15%;
+    }
+
+    .contestan, .contestan .cont-name{
+        padding-bottom: 2rem;
+    }
+    
+    .election .time-left{
+        align-self: center;
+        font-size: var(--mid-font);
+        bottom: 5%;
+    }
     
 }
