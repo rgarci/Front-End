@@ -9,8 +9,11 @@
     --big-font: 62px;
     --descr-font: 24px;
     --action-font: 32px;
+    --mid-font: 16px;
     --small-font: 12px;
     --medium-font: 48px;
+
+    --mov-big-font: 40px;
 }
 
 *{
@@ -122,7 +125,10 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    font-family: var(--font-default);
+    font-size: var(--mid-font);
 }
 
 .cm-image{
@@ -395,5 +401,69 @@
         width: 90vw;
         content: url("images/logos/cover.png");
         top: 15%;
+    }
+
+    .aboutus{
+        padding: 40px;
+    }
+
+    .au-title{
+        font-size: var(--mov-big-font);
+    }
+
+    .au-content{
+        font-size: var(--small-font);
+        width: 100%;
+        line-height: 30px;
+    }
+
+    .au-subtitle{
+        font-size: var(--descr-font);
+    }
+
+    .card-member{
+        font-size: var(--small-font);
+    }
+    
+    .cm-image{
+        width: 70px;
+        height: 70px;
+    }
+
+    .quizz{
+        background: linear-gradient(180deg, rgba(137, 128, 128, 0.31) 0%, rgba(0, 0, 0, 0.5) 41.67%), url("images/doctors.jpg") 52% 30% no-repeat;
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .quizz-title, .art-title, .el-title{
+        font-size: var(--mov-big-font);
+        width: 90%;
+        text-align: center;
+    }
+
+    .quizz-title{
+        margin-bottom: 80px;
+    }
+    
+    .gotoservice, .gotoservices{
+        font-size: var(--descr-font);
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    
+    .gotoservice{
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    
+    .gotoservices{
+        text-transform: capitalize;
+        padding: 5px;
+        border-bottom: 3px solid var(--white);
     }
 }
