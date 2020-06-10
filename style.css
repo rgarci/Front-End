@@ -476,6 +476,25 @@
         text-align: center;
         width: 80%;
         padding-top: 2rem;
-        padding-bottom: 12rem;
+        padding-bottom: 8rem;
     }
+
+    .art-info .gotoservices{
+        margin-bottom: 8rem;
+    }
+
+    .news{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .new{
+        width: 70vw;
+        margin-top: 0px;
+    }
+    
+    .new-img{
+        height: 48vw;
+    }
+    
 }
