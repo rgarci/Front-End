@@ -55,7 +55,6 @@
             <a href="" class="gotoservice">contestar quizz</a>
             <a href="" class="gotoservices">ver todos los quizzes</a>
         </div>
-        
     </section>
     <section class="articles">
         <div class="art-info">
@@ -101,18 +100,14 @@
                     <div class="cont-bar opt1"></div>
                     <p class="cont-percent">64%</p>
                 </div>
-                
             </div>
-
             <div class="contestan">
                 <article class="cont-name" title="VOTA AHORA"><a href="">cybermen</a></article>
                 <div class="percentage">
                     <div class="cont-bar opt2"></div>
                     <p class="cont-percent">36%</p>
                 </div>
-
             </div>
-            
         </section>
         <p class="time-left">Quedan 36 hrs 24 min 18 s</p>
     </section>

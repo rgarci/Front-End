@@ -80,7 +80,7 @@
 }
 
 .aboutus{
-    height: calc(100vh -100px);
+    min-height: calc(100vh -100px);
     font-family: var(--font-default);
     padding: 54px;
 }
@@ -254,7 +254,8 @@
 }
 
 .el-title{
-    width: fit-content;
+    width: 100%;
+    text-align: center;
     position: absolute;
     top: 15%;
 }
