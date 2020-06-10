@@ -451,19 +451,31 @@
     
     .gotoservice, .gotoservices{
         font-size: var(--descr-font);
-        font-weight: bold;
-        text-decoration: none;
-        margin-bottom: 32px;
-        text-align: center;
     }
     
     .gotoservice{
         padding: 1rem 2rem 1rem 2rem;
     }
+
+    .articles{
+        justify-content: space-around;
+        background: linear-gradient(180deg, #161827 0%, rgba(255, 255, 255, 0) 100%), url("images/jodie2.png") 0% 0% no-repeat;
+        align-items: center;
+        background-blend-mode: multiply, normal;
+    }
+
+    .art-title{
+        width: 80%;
+    }
     
-    .gotoservices{
-        text-transform: capitalize;
-        padding: 5px;
-        border-bottom: 3px solid var(--white);
+    .art-info{
+        padding-right: 0px;
+    }
+    
+    .article-desc{
+        text-align: center;
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 12rem;
     }
 }
