@@ -52,6 +52,10 @@
     color: var(--white);
 }
 
+.burger{
+    display: none;
+}
+
 .footer{
     display: flex;
     align-items: center;
@@ -77,6 +81,7 @@
 .ban-logo > img{
     max-width: 100%;
     height: auto;
+    content: url("images/logos/default.png");
 }
 
 .aboutus{
@@ -368,4 +373,27 @@
     position: absolute;
     bottom: 0%;
     right: 10%;
+}
+
+@media screen and (max-width: 425px){
+    .nav-options{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        width: 32px;
+        height: auto;
+        padding-right: 16px;
+    }
+
+    .banner{
+        background: url("images/banner.jpg") 65% 60% no-repeat;
+    }
+
+    .ban-logo{
+        width: 90vw;
+        content: url("images/logos/cover.png");
+        top: 15%;
+    }
 }
