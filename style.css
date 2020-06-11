@@ -22,6 +22,10 @@
     margin: 0;
 }
 
+body{
+    font-family: var(--font-default);
+}
+
 .navbar{
     background-color: var(--black);
     display: flex;
@@ -45,8 +49,7 @@
     flex-flow: row wrap;
     list-style: none;
     justify-content: space-evenly;
-    font-family: var(--font-default);
-    font-size: var(--descr-font);
+    font-size: var(--small-font);
     text-transform: uppercase;
 }
 
@@ -90,14 +93,11 @@
 
 .aboutus{
     min-height: calc(100vh -100px);
-    font-family: var(--font-default);
-    padding: 54px;
+    padding: 56px;
 }
 
 .au-title{
     font-size: var(--big-font);
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .au-content{
@@ -111,9 +111,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
     text-align: center;
-    font-size: var(--medium-font);
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .team{
@@ -128,7 +125,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: var(--font-default);
     font-size: var(--mid-font);
 }
 
@@ -158,7 +154,6 @@
 }
 
 .quizz-title, .art-title, .el-title{
-    font-family: var(--font-default);
     font-size: var(--big-font);
     font-weight: bold;
     text-transform: uppercase;
@@ -174,7 +169,6 @@
 
 .gotoservice, .gotoservices{
     color: var(--white);
-    font-family: var(--font-default);
     font-size: var(--action-font);
     font-weight: bold;
     text-decoration: none;
@@ -214,7 +208,6 @@
 
 .article-desc{
     color: var(--white);
-    font-family: var(--font-default);
     font-size: var(--descr-font);
     font-weight: 500;
     width: 500px;
@@ -248,7 +241,6 @@
 }
 
 .new-content{
-    font-family: var(--font-default);
     font-size: var(--small-font);
     max-height: 3rem;
     overflow: hidden;
@@ -273,7 +265,6 @@
 }
 
 .el-desc{
-    font-family: var(--font-default);
     font-size: var(--action-font);
     width: 25vw;
     text-align: center;
@@ -291,10 +282,6 @@
 }
 
 .contestan .cont-name a{
-    font-family: var(--font-default);
-    font-size: var(--medium-font);
-    font-weight: bold;
-    text-transform: uppercase;
     color: var(--white);
     text-decoration: none;
 }
@@ -321,12 +308,10 @@
 }
 
 .cont-percent{
-    font-family: var(--font-default);
     font-size: var(--descr-font);
 }
 
 .election .time-left{
-    font-family: var(--font-default);
     font-size: var(--action-font);
     position: absolute;
     bottom: 24px;
@@ -341,8 +326,7 @@
     padding: 2rem 4rem 2rem 4rem;
 }
 
-.store-title{
-    font-family: var(--font-default);
+.store-title, .contestan .cont-name a, .au-title, .au-subtitle{
     font-size: var(--medium-font);
     font-weight: bold;
     text-transform: uppercase;
@@ -368,7 +352,6 @@
     width: 24vw;
     height: calc(24rem - 4rem);
     background-color: var(--white);
-    font-family: var(--font-default);
     font-size: var(--descr-font);
     padding: 2rem;
     line-height: 40px;
@@ -382,16 +365,122 @@
     right: 10%;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
     .nav-options{
         display: none;
     }
 
     .burger{
         display: flex;
-        width: 32px;
+        width: fit-content;
         height: auto;
+        margin-right: 16px;
+
+    }
+
+    .burger img{
+        width: 48px;
         padding-right: 16px;
+    }
+
+    .ban-logo{
+        width: 70vw;
+        top: 25%;
+    }
+
+    .au-title{
+        text-align: center;
+    }
+
+    .au-content{
+        text-align: center;
+        width: 100%;
+    }
+
+    .quizz{
+        background: linear-gradient(180deg, rgba(137, 128, 128, 0.31) 0%, rgba(0, 0, 0, 0.5) 41.67%), url("images/doctors.jpg") 52% 30% no-repeat;
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .quizz-title{
+        margin-bottom: 80px;
+    }
+
+    .art-info{
+        padding-right: 0px;
+    }
+
+    .new{
+        width: 35vw;
+        margin-top: 40px;
+    }
+    
+    .new-img{
+        height: 25vw;
+    }
+
+    .election{
+        height: 100vh;
+    }
+
+    .el-title{
+        font-size: var(--medium-font);
+    }
+
+    .el-desc{
+        width: 85%;
+    }
+
+    .store{
+        min-height: 45vh;
+        padding: 0px;
+    }
+    
+    .store-title{
+        margin-top: 4rem;
+    }
+    
+    .store-content{
+        flex-flow: column wrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .store-img{
+        width: 100vw;
+        height: auto;
+    }
+    
+    .store-card{
+        width: 80vw;
+        height: fit-content;
+        font-size: var(--action-font);
+        padding: 2vw 10vw 0vw 10vw;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .store-card > .gotoservices{
+        font-size: var(--descr-font);
+        position: initial;
+        display: block;
+        margin-bottom: 0px;
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .logo{
+        content: url("images/logos/profile.png");
+    }
+    
+    .burger img{
+        width: 24px;
     }
 
     .banner{
@@ -409,13 +498,14 @@
     }
 
     .au-title{
+        text-align: start;
         font-size: var(--mov-big-font);
     }
 
     .au-content{
         font-size: var(--small-font);
-        width: 100%;
         line-height: 30px;
+        text-align: start;
     }
 
     .au-subtitle{
@@ -430,15 +520,6 @@
         width: 70px;
         height: 70px;
     }
-
-    .quizz{
-        background: linear-gradient(180deg, rgba(137, 128, 128, 0.31) 0%, rgba(0, 0, 0, 0.5) 41.67%), url("images/doctors.jpg") 52% 30% no-repeat;
-        display: flex;
-        flex-direction: column;
-        color: var(--white);
-        align-items: center;
-        justify-content: flex-end;
-    }
     
     .quizz-title, .art-title, .el-title{
         font-size: var(--mov-big-font);
@@ -446,10 +527,6 @@
         text-align: center;
     }
 
-    .quizz-title{
-        margin-bottom: 80px;
-    }
-    
     .gotoservice, .gotoservices{
         font-size: var(--descr-font);
     }
@@ -472,7 +549,6 @@
     }
     
     .art-info{
-        padding-right: 0px;
         padding-top: 20px;
     }
     
@@ -516,7 +592,6 @@
     
     .el-desc{
         font-size: var(--descr-font);
-        width: 85%;
         text-align: start;
         position: absolute;
         top: 20%;
@@ -535,44 +610,18 @@
         font-size: var(--mid-font);
         bottom: 5%;
     }
-
-    .store{
-        min-height: 45vh;
-        
-        padding: 0px;
-    }
     
     .store-title{
         font-size: var(--action-font);
-        margin-top: 4rem;
-    }
-    
-    .store-content{
-        flex-flow: column wrap;
-        align-items: center;
-        margin-top: 20px;
-    }
-    
-    .store-img{
-        width: 100vw;
-        height: auto;
     }
     
     .store-card{
-        width: 80vw;
-        height: fit-content;
         font-size: var(--mid-font);
-        padding: 2vw 10vw 0vw 10vw;
         line-height: 20px;
-        position: relative;
     }
     
     .store-card > .gotoservices{
         font-size: var(--mov-small-font);
-        position: initial;
-        display: block;
-        margin-bottom: 0px;
-        text-align: end;
     }
     
 }
