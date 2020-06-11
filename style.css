@@ -475,6 +475,9 @@ body{
 }
 
 @media screen and (max-width: 425px){
+    .logo{
+        content: url("images/logos/profile.png");
+    }
     
     .burger img{
         width: 24px;

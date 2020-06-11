@@ -73,7 +73,7 @@ body{
 
 .contact{
     min-height: calc(91vh - 9rem);
-    background: url("images/contacto.jpg");
+    background: linear-gradient(0deg, rgba(137, 128, 128, 0.2), rgba(137, 128, 128, 0.2)), url("images/contacto.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -86,6 +86,7 @@ body{
     text-transform: capitalize;
     width: fit-content;
     color: var(--white);
+    margin-bottom: 24px;
 }
 
 .cont-form{
@@ -94,7 +95,7 @@ body{
 }
 
 .cont-form > input, .cont-form > textarea{
-    width: 600px;
+    width: calc(45vw - 32px);
     background-color: var(--grey);
     color: var(--black);
     font-size: var(--descr-font);
@@ -103,6 +104,7 @@ body{
     border-radius: 16px;
     height: 40px;
     padding: 16px 24px 16px 24px;
+    margin-bottom: 24px;
 }
 
 .cont-form > textarea{
@@ -122,7 +124,105 @@ body{
 }
 
 .separator{
-    width: 650px;
+    width: 45vw;
     height: 2px;
     background-color: var(--white);
+}
+
+.soc-media{
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    justify-content: center;
+}
+
+.soc-app{
+    width: 50px;
+    height: 50px;
+    margin: 16px;
+}
+
+.soc-app > img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .nav-options{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        width: fit-content;
+        height: auto;
+        margin-right: 16px;
+
+    }
+
+    .burger img{
+        width: 48px;
+        padding-right: 16px;
+    }
+
+    .contact{
+        min-height: calc(91vh - 3rem - 24px);
+        background: linear-gradient(0deg, rgba(137, 128, 128, 0.21), rgba(137, 128, 128, 0.21)), url("images/contacto.jpg") 50% 0% no-repeat;
+        background-size: cover;
+        padding: 24px 92px 0px 92px;
+    }
+
+    .cont-form > input, .cont-form > textarea, .separator, .soc-media{
+        width: inherit;
+        margin-bottom: 32px;
+    }
+
+    .soc-app{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .logo{
+        content: url("images/logos/profile.png");
+    }
+
+    .burger img{
+        width: 24px;
+    }
+
+    .contact{
+        min-height: calc(91vh - 3rem - 32px);
+        padding: 32px 54px 0px 54px;
+    }
+
+    .cont-title{
+        font-size: var(--mov-big-font);
+        text-align: center;
+        width: inherit;
+    }
+
+    .cont-form > input, .cont-form > textarea {
+        font-size: var(--mid-font);
+        padding: 0px 16px 0px 16px;
+        border-radius: 8px;
+    }
+
+    .send{
+        width: inherit;
+        font-size: var(--mid-font);
+        font-family: var(--font-default);
+        padding: 8px 0px 8px 0px;
+    }
+
+    .separator{
+        margin-bottom: 0px;
+    }
+
+    .soc-app{
+        width: 50px;
+        height: 50px;
+    }
 }
