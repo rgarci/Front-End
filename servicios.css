@@ -1,4 +1,5 @@
 :root {
+    --black: #0808084d;
     --grey-light:#E9EFE7;
     --grey: #F1F1F1;
     --blue: #3262E0;
@@ -76,7 +77,7 @@ header{
   font-size: var(--medium-font);
 }
 
-.sect-quiz, .shop{
+.shop{
   background-color: var(--grey-light);
   padding: 2rem;
 }
@@ -99,7 +100,6 @@ header{
     max-width: 300px;
     min-height: max-content;
     background-color: white;
-    border: 1px solid seashell;
     margin: 1rem;
     overflow: hidden;
   }
@@ -132,7 +132,7 @@ header{
     margin: 2rem 10rem;
   }
   
-  .sect-art{
+  .sect-art, .sect-quiz{
     padding: 2rem;
   }
 
@@ -145,7 +145,6 @@ header{
 
   .art-card{
       max-width: 75%;
-      min-height: max-content;
       display: flex;
       background-color: white;
       overflow: hidden;
@@ -186,7 +185,7 @@ header{
       min-height: max-content;
       background-color: white;
       border: 1px solid seashell;
-      margin: 1rem 1.5rem;
+      margin: 1rem 2rem;
       border-radius: 8px;
       overflow: hidden;
   }
@@ -218,4 +217,109 @@ header{
   .ftr{
     background-color: var(--grey);
     height: 3rem;
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 426px){
+
+    .hero-banner{
+      background-position-y: -1rem;
+    }
+
+    .quizzes .quizz-card:nth-child(n+3),
+    .arts .art-card:nth-child(n+3),
+    .art-card .art-card-content p,
+    .products .product-card:nth-child(n+5)
+    {
+      display: none;
+    }
+
+    .art-card .art-card-content{
+      padding: 1rem;
+    }
+
+    .arts .art-card{
+      position: relative;
+      min-height: 20rem;
+    }
+
+    .art-card .art-card-content{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      margin-bottom: 2rem;
+    }
+
+    .art-card .art-card-content h1{
+      color: white;
+      font-size: var(--descr-font);
+      margin-bottom: 2rem;
+    }
+
+    .art-card .art-card-content span{
+      position: absolute;
+      right: 0;
+    }
+
+    .art-card .art-card-figure{
+      width: 100%;
+    }
+
+    .quizz-card{
+      min-width: 400px;
+    }
+
+    .art-card-reverse{
+      flex-direction: row;
+    }
+
+    .product-card{
+      min-width: 230px;
+    }
+
+    .btn{
+      margin: 1rem 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px){
+    .nav-bar .nav-options{
+      display: none;
+    }
+
+    .hero-banner{
+      height: 8rem;
+      background-position: center 0rem;
+      background-size: 600px;
+    }
+    .hero-banner h1{
+      font-size: var(--descr-font);
+    }
+    .sect-quiz, .sect-art, .shop{
+      padding: 2rem 0 2rem 0;
+    }
+
+    .sect-quiz h2, .sect-art h2, .shop h2{
+      font-size: var(--title-art-font);
+    }
+
+    .quizzes .quizz-card:nth-child(n+4),
+    .products .product-card:nth-child(n+5)
+    {
+      display: none;
+    }
+
+    .quizz-card{
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .shop{
+      flex-wrap: wrap;
+    }
+
+    .product-card{
+      max-width: 180px;
+      margin: 8px;
+    }
+
   }
