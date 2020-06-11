@@ -72,5 +72,57 @@ body{
 }
 
 .contact{
-    height: calc(91vh - 3rem);
+    min-height: calc(91vh - 9rem);
+    background: url("images/contacto.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 120px 3rem 120px;
+}
+
+.cont-title{
+    font-size: var(--big-font);
+    font-weight: bold;
+    text-transform: capitalize;
+    width: fit-content;
+    color: var(--white);
+}
+
+.cont-form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cont-form > input, .cont-form > textarea{
+    width: 600px;
+    background-color: var(--grey);
+    color: var(--black);
+    font-size: var(--descr-font);
+    font-family: var(--font-default);
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    padding: 16px 24px 16px 24px;
+}
+
+.cont-form > textarea{
+    height: 160px;
+}
+
+.send{
+    width: fit-content;
+    background: none;
+    text-transform: capitalize;
+    border: 3px solid var(--white);
+    padding: 16px 24px 16px 24px;
+    color: var(--white);
+    font-size: var(--action-font);
+    font-weight: bold;
+    text-align: center;
+}
+
+.separator{
+    width: 650px;
+    height: 2px;
+    background-color: var(--white);
 }
