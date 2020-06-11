@@ -328,6 +328,10 @@ header{
       display: none;
     }
 
+    .logo{
+      content: url("images/logos/profile.png");
+    }
+
     .burger{
       display: flex;
       width: fit-content;
