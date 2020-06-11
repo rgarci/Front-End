@@ -26,11 +26,9 @@ body {
     line-height: 1.75;
 }
 
-
 header{
   position: relative;
 }
-
 
 .navbar{
   background-color: var(--black);
@@ -46,7 +44,7 @@ header{
   height: 100%;
 }
 
-.logo > img{
+.logo >a img{
   max-height: 100%;
 }
 

@@ -24,6 +24,7 @@
 
 body{
     font-family: var(--font-default);
+    font-weight: 300;
 }
 
 .navbar{
@@ -40,7 +41,7 @@ body{
     height: 100%;
 }
 
-.logo > img{
+.logo > a img{
     max-height: 100%;
 }
 
