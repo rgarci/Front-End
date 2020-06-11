@@ -382,16 +382,119 @@
     right: 10%;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
     .nav-options{
         display: none;
     }
 
     .burger{
         display: flex;
-        width: 32px;
+        width: fit-content;
         height: auto;
+        margin-right: 16px;
+
+    }
+
+    .burger img{
+        width: 48px;
         padding-right: 16px;
+    }
+
+    .ban-logo{
+        width: 70vw;
+        top: 25%;
+    }
+
+    .au-title{
+        text-align: center;
+    }
+
+    .au-content{
+        text-align: center;
+        width: 100%;
+    }
+
+    .quizz{
+        background: linear-gradient(180deg, rgba(137, 128, 128, 0.31) 0%, rgba(0, 0, 0, 0.5) 41.67%), url("images/doctors.jpg") 52% 30% no-repeat;
+        display: flex;
+        flex-direction: column;
+        color: var(--white);
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .quizz-title{
+        margin-bottom: 80px;
+    }
+
+    .art-info{
+        padding-right: 0px;
+    }
+
+    .new{
+        width: 35vw;
+        margin-top: 40px;
+    }
+    
+    .new-img{
+        height: 25vw;
+    }
+
+    .election{
+        height: 100vh;
+    }
+
+    .el-title{
+        font-size: var(--medium-font);
+    }
+
+    .el-desc{
+        width: 85%;
+    }
+
+    .store{
+        min-height: 45vh;
+        padding: 0px;
+    }
+    
+    .store-title{
+        margin-top: 4rem;
+    }
+    
+    .store-content{
+        flex-flow: column wrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .store-img{
+        width: 100vw;
+        height: auto;
+    }
+    
+    .store-card{
+        width: 80vw;
+        height: fit-content;
+        font-size: var(--action-font);
+        padding: 2vw 10vw 0vw 10vw;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .store-card > .gotoservices{
+        font-size: var(--descr-font);
+        position: initial;
+        display: block;
+        margin-bottom: 0px;
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 425px){
+    
+    .burger img{
+        width: 24px;
     }
 
     .banner{
@@ -409,13 +512,14 @@
     }
 
     .au-title{
+        text-align: start;
         font-size: var(--mov-big-font);
     }
 
     .au-content{
         font-size: var(--small-font);
-        width: 100%;
         line-height: 30px;
+        text-align: start;
     }
 
     .au-subtitle{
@@ -430,15 +534,6 @@
         width: 70px;
         height: 70px;
     }
-
-    .quizz{
-        background: linear-gradient(180deg, rgba(137, 128, 128, 0.31) 0%, rgba(0, 0, 0, 0.5) 41.67%), url("images/doctors.jpg") 52% 30% no-repeat;
-        display: flex;
-        flex-direction: column;
-        color: var(--white);
-        align-items: center;
-        justify-content: flex-end;
-    }
     
     .quizz-title, .art-title, .el-title{
         font-size: var(--mov-big-font);
@@ -446,10 +541,6 @@
         text-align: center;
     }
 
-    .quizz-title{
-        margin-bottom: 80px;
-    }
-    
     .gotoservice, .gotoservices{
         font-size: var(--descr-font);
     }
@@ -472,7 +563,6 @@
     }
     
     .art-info{
-        padding-right: 0px;
         padding-top: 20px;
     }
     
@@ -516,7 +606,6 @@
     
     .el-desc{
         font-size: var(--descr-font);
-        width: 85%;
         text-align: start;
         position: absolute;
         top: 20%;
@@ -535,44 +624,18 @@
         font-size: var(--mid-font);
         bottom: 5%;
     }
-
-    .store{
-        min-height: 45vh;
-        
-        padding: 0px;
-    }
     
     .store-title{
         font-size: var(--action-font);
-        margin-top: 4rem;
-    }
-    
-    .store-content{
-        flex-flow: column wrap;
-        align-items: center;
-        margin-top: 20px;
-    }
-    
-    .store-img{
-        width: 100vw;
-        height: auto;
     }
     
     .store-card{
-        width: 80vw;
-        height: fit-content;
         font-size: var(--mid-font);
-        padding: 2vw 10vw 0vw 10vw;
         line-height: 20px;
-        position: relative;
     }
     
     .store-card > .gotoservices{
         font-size: var(--mov-small-font);
-        position: initial;
-        display: block;
-        margin-bottom: 0px;
-        text-align: end;
     }
     
 }
