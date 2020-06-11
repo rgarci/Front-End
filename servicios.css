@@ -117,9 +117,14 @@ header{
   .art-card .art-card-content span {
     display: block;
     font-weight: bold;
-    color: var(--blue);
     margin-bottom: .5rem;
+  }
 
+  .quizz-card .quizz-card-content span a, 
+  .art-card .art-card-content span a,
+  .product-card-content span a{
+    text-decoration: none;
+    color: var(--blue);
   }
 
   .btn{
@@ -210,7 +215,6 @@ header{
   .product-card .product-card-content span {
     display: block;
     font-weight: bold;
-    color: var(--blue);
     text-align: end;
   }
 
@@ -225,12 +229,17 @@ header{
       background-position-y: -1rem;
     }
 
+    .nav-bar .nav-options,
     .quizzes .quizz-card:nth-child(n+3),
     .arts .art-card:nth-child(n+3),
     .art-card .art-card-content p,
     .products .product-card:nth-child(n+5)
     {
       display: none;
+    }
+    
+    .quizz-card{
+      min-width: 400px;
     }
 
     .art-card .art-card-content{
@@ -264,10 +273,6 @@ header{
       width: 100%;
     }
 
-    .quizz-card{
-      min-width: 400px;
-    }
-
     .art-card-reverse{
       flex-direction: row;
     }
@@ -294,6 +299,12 @@ header{
     .hero-banner h1{
       font-size: var(--descr-font);
     }
+
+    .btn{
+      margin: auto;
+      text-align: center;
+    }
+
     .sect-quiz, .sect-art, .shop{
       padding: 2rem 0 2rem 0;
     }
@@ -310,7 +321,59 @@ header{
 
     .quizz-card{
       max-width: 100%;
+      margin: 12px 0;
+      position: relative;
+      border-bottom: 2px solid seashell;
+      height: 14rem;
+    }
+
+    .quizz-card .quizz-card-content{
+      margin: 0 2rem;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .quizz-card .quizz-card-content p{
+      color: white;
+    }
+
+    .quizz-card .quizz-card-content span{
+      text-align: center;
       margin: 0;
+    }
+
+    .arts{
+      padding: 0;
+    }
+    
+    .art-card-reverse{
+      flex-direction: row;
+    }
+
+    .arts .art-card{
+      min-width: 100%;
+      flex-direction: column;
+      margin: 8px 0;
+      border-bottom: 2px solid seashell;
+    }
+
+    .art-card .art-card-figure{
+      width: 100%;
+    }
+
+    .art-card .art-card-content{
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .art-card-content span{
+      display: block;
+      text-align: end;
+      margin-right: 1rem;
+    }
+  
+    .art-card-content p{
+      margin: 12px auto;
     }
 
     .shop{
@@ -322,4 +385,6 @@ header{
       margin: 8px;
     }
 
+    
+    
   }
