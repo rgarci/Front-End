@@ -1,0 +1,76 @@
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #F1F1F1;
+    --green: #0EFA09;
+    --red: #FA0909;
+    --blue: #3262E0;
+    --font-default: 'Montserrat', sans-serif;
+    --big-font: 62px;
+    --descr-font: 24px;
+    --action-font: 32px;
+    --mid-font: 16px;
+    --small-font: 12px;
+    --medium-font: 48px;
+
+    --mov-big-font: 40px;
+    --mov-small-font: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--font-default);
+}
+
+.navbar{
+    background-color: var(--black);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo > img{
+    max-height: 100%;
+}
+
+.nav-options{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: var(--small-font);
+    text-transform: uppercase;
+}
+
+.nav-option > a{
+    padding-right: 24px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.burger{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    height: 3rem;
+}
+
+.contact{
+    height: calc(91vh - 3rem);
+}
