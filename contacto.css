@@ -1,0 +1,228 @@
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey: #F1F1F1;
+    --green: #0EFA09;
+    --red: #FA0909;
+    --blue: #3262E0;
+    --font-default: 'Montserrat', sans-serif;
+    --big-font: 62px;
+    --descr-font: 24px;
+    --action-font: 32px;
+    --mid-font: 16px;
+    --small-font: 12px;
+    --medium-font: 48px;
+
+    --mov-big-font: 40px;
+    --mov-small-font: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--font-default);
+}
+
+.navbar{
+    background-color: var(--black);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 9vh;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo > img{
+    max-height: 100%;
+}
+
+.nav-options{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: var(--small-font);
+    text-transform: uppercase;
+}
+
+.nav-option > a{
+    padding-right: 24px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.burger{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    height: 3rem;
+}
+
+.contact{
+    min-height: calc(91vh - 9rem);
+    background: linear-gradient(0deg, rgba(137, 128, 128, 0.2), rgba(137, 128, 128, 0.2)), url("images/contacto.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 120px 3rem 120px;
+}
+
+.cont-title{
+    font-size: var(--big-font);
+    font-weight: bold;
+    text-transform: capitalize;
+    width: fit-content;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+.cont-form{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cont-form > input, .cont-form > textarea{
+    width: calc(45vw - 32px);
+    background-color: var(--grey);
+    color: var(--black);
+    font-size: var(--descr-font);
+    font-family: var(--font-default);
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    padding: 16px 24px 16px 24px;
+    margin-bottom: 24px;
+}
+
+.cont-form > textarea{
+    height: 160px;
+}
+
+.send{
+    width: fit-content;
+    background: none;
+    text-transform: capitalize;
+    border: 3px solid var(--white);
+    padding: 16px 24px 16px 24px;
+    color: var(--white);
+    font-size: var(--action-font);
+    font-weight: bold;
+    text-align: center;
+}
+
+.separator{
+    width: 45vw;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.soc-media{
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    justify-content: center;
+}
+
+.soc-app{
+    width: 50px;
+    height: 50px;
+    margin: 16px;
+}
+
+.soc-app > img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .nav-options{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        width: fit-content;
+        height: auto;
+        margin-right: 16px;
+
+    }
+
+    .burger img{
+        width: 48px;
+        padding-right: 16px;
+    }
+
+    .contact{
+        min-height: calc(91vh - 3rem - 24px);
+        background: linear-gradient(0deg, rgba(137, 128, 128, 0.21), rgba(137, 128, 128, 0.21)), url("images/contacto.jpg") 50% 0% no-repeat;
+        background-size: cover;
+        padding: 24px 92px 0px 92px;
+    }
+
+    .cont-form > input, .cont-form > textarea, .separator, .soc-media{
+        width: inherit;
+        margin-bottom: 32px;
+    }
+
+    .soc-app{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .logo{
+        content: url("images/logos/profile.png");
+    }
+
+    .burger img{
+        width: 24px;
+    }
+
+    .contact{
+        min-height: calc(91vh - 3rem - 32px);
+        padding: 32px 54px 0px 54px;
+    }
+
+    .cont-title{
+        font-size: var(--mov-big-font);
+        text-align: center;
+        width: inherit;
+    }
+
+    .cont-form > input, .cont-form > textarea {
+        font-size: var(--mid-font);
+        padding: 0px 16px 0px 16px;
+        border-radius: 8px;
+    }
+
+    .send{
+        width: inherit;
+        font-size: var(--mid-font);
+        font-family: var(--font-default);
+        padding: 8px 0px 8px 0px;
+    }
+
+    .separator{
+        margin-bottom: 0px;
+    }
+
+    .soc-app{
+        width: 50px;
+        height: 50px;
+    }
+}
