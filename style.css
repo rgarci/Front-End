@@ -22,6 +22,10 @@
     margin: 0;
 }
 
+body{
+    font-family: var(--font-default);
+}
+
 .navbar{
     background-color: var(--black);
     display: flex;
@@ -45,8 +49,7 @@
     flex-flow: row wrap;
     list-style: none;
     justify-content: space-evenly;
-    font-family: var(--font-default);
-    font-size: var(--descr-font);
+    font-size: var(--small-font);
     text-transform: uppercase;
 }
 
@@ -90,14 +93,11 @@
 
 .aboutus{
     min-height: calc(100vh -100px);
-    font-family: var(--font-default);
-    padding: 54px;
+    padding: 56px;
 }
 
 .au-title{
     font-size: var(--big-font);
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .au-content{
@@ -111,9 +111,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
     text-align: center;
-    font-size: var(--medium-font);
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .team{
@@ -128,7 +125,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: var(--font-default);
     font-size: var(--mid-font);
 }
 
@@ -158,7 +154,6 @@
 }
 
 .quizz-title, .art-title, .el-title{
-    font-family: var(--font-default);
     font-size: var(--big-font);
     font-weight: bold;
     text-transform: uppercase;
@@ -174,7 +169,6 @@
 
 .gotoservice, .gotoservices{
     color: var(--white);
-    font-family: var(--font-default);
     font-size: var(--action-font);
     font-weight: bold;
     text-decoration: none;
@@ -214,7 +208,6 @@
 
 .article-desc{
     color: var(--white);
-    font-family: var(--font-default);
     font-size: var(--descr-font);
     font-weight: 500;
     width: 500px;
@@ -248,7 +241,6 @@
 }
 
 .new-content{
-    font-family: var(--font-default);
     font-size: var(--small-font);
     max-height: 3rem;
     overflow: hidden;
@@ -273,7 +265,6 @@
 }
 
 .el-desc{
-    font-family: var(--font-default);
     font-size: var(--action-font);
     width: 25vw;
     text-align: center;
@@ -291,10 +282,6 @@
 }
 
 .contestan .cont-name a{
-    font-family: var(--font-default);
-    font-size: var(--medium-font);
-    font-weight: bold;
-    text-transform: uppercase;
     color: var(--white);
     text-decoration: none;
 }
@@ -321,12 +308,10 @@
 }
 
 .cont-percent{
-    font-family: var(--font-default);
     font-size: var(--descr-font);
 }
 
 .election .time-left{
-    font-family: var(--font-default);
     font-size: var(--action-font);
     position: absolute;
     bottom: 24px;
@@ -341,8 +326,7 @@
     padding: 2rem 4rem 2rem 4rem;
 }
 
-.store-title{
-    font-family: var(--font-default);
+.store-title, .contestan .cont-name a, .au-title, .au-subtitle{
     font-size: var(--medium-font);
     font-weight: bold;
     text-transform: uppercase;
@@ -368,7 +352,6 @@
     width: 24vw;
     height: calc(24rem - 4rem);
     background-color: var(--white);
-    font-family: var(--font-default);
     font-size: var(--descr-font);
     padding: 2rem;
     line-height: 40px;
